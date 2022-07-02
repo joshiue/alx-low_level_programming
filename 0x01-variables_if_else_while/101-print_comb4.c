@@ -1,34 +1,36 @@
+#include <stdlib.h>
 #include <stdio.h>
-
+#include <time.h>
 /**
- * main - root function
- *
- * Return: always 0
- **/
+*main- entry point
+*Description: Alphabets
+*Return: zero on success
+*/
 int main(void)
 {
-	int t;
-	int o;
+	int i, j, k;
 
-	for (t = 0; t <= 9; t++)
+	for (i = '0'; i <= '9'; i++)
 	{
-		for (o = 0; o <= 9; o++)
+		for (j = '0'; j <= '9'; j++)
 		{
-			if (o > t)
+			for (k = '0'; k <= '9'; k++)
 			{
-				if (!(t == 0 && o == 1))
+				if ((i < j) & (j < k) & (k <= '9'))
 				{
-					putchar(',');
-					putchar(' ');
-				}
+					putchar(i);
+					putchar(j);
+					putchar(k);
 
-				putchar(t + '0');
-				putchar(o + '0');
+					if ((i + j + k) < 168)
+					{
+						putchar(',');
+						putchar(' ');
+					}
+				}
 			}
 		}
 	}
-
 	putchar('\n');
-
 	return (0);
 }
