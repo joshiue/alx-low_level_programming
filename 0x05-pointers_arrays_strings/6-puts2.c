@@ -1,16 +1,20 @@
 #include "main.h"
-#include <string.h>
 
 /**
-* puts2 -> puts2 function
-* @str: str parameter
-*/
+* puts2 - Will print only one character out of two
+* @str: Input string
+* Return: Every other characters
+**/
+
 void puts2(char *str)
 {
-	int len, i;
-
-	len = strlen(str);
-	for (i = 0; i < len; i +=2)
-		_putchar(str[i]);
-	_putchar('\n');
+int i = 0;
+for (; str[i] != '\0'; i++)
+{
+if ((i % 2) == 0)
+_putchar(str[i]);
+else
+continue;
+}
+_putchar('\n');
 }
