@@ -1,18 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - multiplies two numbers.
- * @argc: number of command line arguments.
- * @argv: array that contains the program command line arguments.
- * Return: 0 - success.
- */
+* main -  Prints number of arguements
+* @argc: arguement count
+* @argv: array of pointers to CLI arguement
+* Return: 0
+**/
 int main(int argc, char *argv[])
 {
-	if (argc != 3)
+	if (argc <= 2)
 	{
-		printf("Error\n");
+		printf("%s\n", "Error");
 		return (1);
 	}
-	printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
+	else
+		printf("%d\n", (atoi(argv[argc - 1]) * atoi(argv[argc - 2])));
 	return (0);
 }
