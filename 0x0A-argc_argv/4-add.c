@@ -1,46 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
-
 /**
- * isInteger - checks if s is an integer
- * @s: string to check
- * Return: 0 or 1
- */
-
-int isInteger(const char *s)
+* main - Prints the addition of positive numbers,
+*followed by a new line.
+* @argc: The number of arguments passed to the program.
+* @argv: An array of pointers to the arguments.
+* Return: If one of the numbers contains symbols that are non-digits - 1.
+*Otherwise - 0.
+*/
+int main(int argc, char *argv[])
 {
-	int i = 0;
-
-	while (s[i] != '\0')
-	{
-		if (s[i] < '0' || s[i] > '9')
-			return (1);
-		i++;
-	}
-	return (0);
+int num, digit, sum = 0;
+for (num = 1; num < argc; num++)
+{
+for (digit = 0; argv[num][digit]; digit++)
+{
+if (argv[num][digit] < '0' || argv[num][digit] > '9')
+{
+printf("Error\n");
+return (1);
 }
-
-/**
- * main - adds positive numbers
- * @argc: int
- * @argv: list
- * Return: 0
- */
-
-int main(int argc, char const *argv[])
-{
-	int sum = 0;
-
-	while (--argc)
-
-	{
-		if (isInteger(argv[argc]))
-		{
-			printf("Error\n");
-			return (1);
-		}
-		sum += atoi(argv[argc]);
-	}
-	printf("%i\n", sum);
-	return (0);
+}
+sum += atoi(argv[num]);
+}
+printf("%d\n", sum);
+return (0);
 }
