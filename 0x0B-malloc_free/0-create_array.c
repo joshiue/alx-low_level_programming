@@ -1,26 +1,53 @@
-#include "main.h"
 #include <stdlib.h>
+#include <stdio.h>
+#include "holberton.h"
 
 /**
- * create_array - creates an array of char and initializs it
- * with a specific char
- * @size: size of the array.
- * @c: specific char to be initialized
- * Return: a pointer to the array, or NULL if it fails.
+ *_strdup - function that returns a pointer to a newly allocated space in
+ *memory, which contains a copy of the string given as a parameter.
+ *@str: Pointer indicating the string to copy.
+ *Return: pointer indicating the new adress of the copied string.
  */
-char *create_array(unsigned int size, char c)
+char *_strdup(char *str)
 {
+	int i, size;
 	char *p;
-	unsigned int i;
 
-	if (size == 0)
+
+	if (str == NULL)
+	{
 		return (NULL);
+	}
+	size = _strlen(str);
+	p = malloc((size + 1) * sizeof(char));
 
-	p = malloc(size * sizeof(*p));
 	if (p == NULL)
+	{
 		return (NULL);
-	for (i = 0; i < size; i++)
-		p[i] = c;
+	}
 
+	for (i = 0; str[i]; i++)
+	{
+		p[i] = str[i];
+	}
 	return (p);
+}
+
+/**
+ *_strlen - function that returns the length of a string.
+ *@s: string to measute its length.
+ *
+ *Return: int with the length of n.
+ */
+int _strlen(char *s)
+{
+	int len = 0;
+
+	while (*s)
+	{
+		len += 1;
+		s = s + 1;
+	}
+
+	return (len);
 }
