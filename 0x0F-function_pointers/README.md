@@ -5,7 +5,7 @@ where they point in virtual memory, and how to use them.
 
 ## Tests :heavy_check_mark:
 
-* [tests](./tests): Folder of test files. Provided by Holberton School.
+* [tests](./tests): Folder of test files. Provided by ALX Africa.
 
 ## Header Files :file_folder:
 
