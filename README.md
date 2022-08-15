@@ -5,7 +5,7 @@
 
 # Low Level Programming & Algorithms
 
-![](https://www.alxafrica.com/wp-content/uploads/2022/01/header-logo.png)
+![](https://ch.leonteq.com/images/news/partnership-communication-leonteq-strukturierte-produkte-2000x1333px-2.jpg)
 
 # Variables, if, else and while
 
