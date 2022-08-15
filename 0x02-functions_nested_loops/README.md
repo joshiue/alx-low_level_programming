@@ -5,7 +5,7 @@ in C while practicing declaring and defining my own functions.
 
 ## Tests :heavy_check_mark:
 
-* [tests](./tests): Folder of test files. Provided by Holberton School.
+* [tests](./tests): Folder of test files. Provided by ALX Africa.
 
 ## Helper File :raised_hands:
 
@@ -13,7 +13,7 @@ in C while practicing declaring and defining my own functions.
 
 ## Header File :file_folder:
 
-* [holberton.h](./holberton.h): Header file containing prototypes for all
+* [main.h](./main.h): Header file containing prototypes for all
 functions written in the project.
 
 | File                     | Prototype                        |
@@ -34,7 +34,7 @@ functions written in the project.
 ## Tasks :page_with_curl:
 
 * **0. _putchar**
-  * [0-holberton.c](./0-holberton.c): C program that prints `Holberton`, followed by a
+  * [0-putchar.c](./0-putchar.c): C program that prints `putcahr`, followed by a
   new line. Returns 0.
 
 * **1. I sometimes suffer from insomnia. And when I can't fall asleep, I play what I call the alphabet game**
