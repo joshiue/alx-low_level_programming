@@ -5,7 +5,7 @@
 
 # Low Level Programming & Algorithms
 
-![](https://ch.leonteq.com/images/news/partnership-communication-leonteq-strukturierte-produkte-2000x1333px-2.jpg)
+![](https://c)
 
 # Variables, if, else and while
 
