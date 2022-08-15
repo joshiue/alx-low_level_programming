@@ -37,7 +37,3 @@ A low-level programming language is a programming language that provides little 
 - Makefiles
 - Sorting and search algorithms
 and more!
-
-## Requirements
-* Ubuntu 14.04 LTS
-* gcc 4.8.4 (-Wall, -Werror, -Wextra, and -pedantic flags)
