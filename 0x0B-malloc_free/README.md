@@ -5,11 +5,11 @@ and dynamic location as well as how to use `malloc`, `free`, and `valgrind` in C
 
 ## Tests :heavy_check_mark:
 
-* [tests](./tests): Folder of test files. Provided by Holberton School.
+* [tests](./tests): Folder of test files. Provided by ALX Africa.
 
 ## Header File :file_folder:
 
-* [holberton.h](./holberton.h): Header file containing prototypes for all functions written
+* [main.h](./main.h): Header file containing prototypes for all functions written
 in the project.
 
 | File               | Protoype                                         |
