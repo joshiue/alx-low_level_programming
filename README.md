@@ -12,7 +12,7 @@ All of the following files are programs written in C:
 
 | Filename | Description |
 | -------- | ----------- |
-## ALX-Africa-low_level_programming
+## ALX Africa
 
 !["ALX Africa"
 ](https://www.alxafrica.com/wp-content/uploads/2022/01/banner-img-2.png)
